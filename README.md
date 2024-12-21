@@ -1,6 +1,6 @@
-# `pip` VS `uv`
+# Developing with Python - `pip` VS `uv`
 
-This repo is meant to serve as both an example and comparison of Python projects using [pip](https://pypi.org/project/pip/) vs [uv](https://docs.astral.sh/uv/) for project setup and development.
+This repo is meant to serve as both an optimized example and comparison of Python projects using [pip](https://pypi.org/project/pip/) vs [uv](https://docs.astral.sh/uv/) for project setup and development.
 
 The comparison here is primarily to weigh the pros and cons of the development experience, including build speeds.
 
