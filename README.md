@@ -49,9 +49,9 @@ user        0.106       0.022       0.080       0.102       0.154
 sys         0.063       0.012       0.044       0.063       0.083  
 ```
 
-### Docker Conclusion
+### Conclusion
 
-As can be seen from the results above, `uv` performs significantly better even on a "trivial" example.
+As can be seen from the results above, `uv` performs significantly better even on a "trivial" example. 84 seconds compared to 25 seconds is _significant_ in the amount of CI time that would be saved, and the enhancement that brings to the speed of the development feedback loop.
 
 ## Developer Experience
 
