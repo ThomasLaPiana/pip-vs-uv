@@ -9,16 +9,10 @@ To create a new UV project, you can either run `uv init` inside of an existing d
 The command used for this repo was:
 
 ```sh
-uv init --app --python 3.12
+uv init --lib --python 3.12
 ```
 
-Passing the `--app` flag tells `uv` that we want to create an application with a proper entrypoint.
-
-This creates the basic starting layout of a `uv` project. The next step is to run any `uv` command so that it auto-generates the `uv.lock` file as well as the `.venv` subdir.
-
-```sh
-uv run hello.py
-```
+Passing the `--lib` flag tells `uv` that we want to create an application with a proper entrypoint. Alternatively you can use `--script` if you will only be working on scripts.
 
 ## Adding Dependencies
 
@@ -28,4 +22,6 @@ uv run hello.py
 uv add requests
 ```
 
-Running this command updates the `pyproject.toml` file as well as updating the `uv.lock` file with extremely fine-grained dependency metadata. This is a cross-platform file used to create completely reproducible environments.
+Running this command updates the `pyproject.toml` file as well as creating & updating the `uv.lock` file with extremely fine-grained dependency metadata. This is a cross-platform file used to create completely reproducible environments.
+
+This command also creates the virtual environment in `.venv`.
